@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+    </head>
+    <body>
+        <h1>Initiative</h1>
+        <form method="POST" action="/dm-tools/encounter/setup/initiative">
+            <label for="name">Name: </label>
+            <input type="text" name="name" id="name">
+
+            <label for="roll">Roll: </label>
+            <input type="text" name="roll" id="roll">
+
+            <input type="submit" name="submit" id="submit" value="Add to initiative order"><br><br>
+
+            <input type="submit" name="start" id="start" value="Start Encounter">
+        </form>
+    </body>
+</html>

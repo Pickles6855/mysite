@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+    </head>
+    <body>
+        <h2>Initiative: </h2>
+        <p>Round #{{current_round}} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Current Turn: &nbsp;{{initiative[current_turn]}}</p>
+        {% for player in initiative %}
+            <p>{{player}}</p>
+        {% endfor %}
+        <br><hr><br>
+
+        <h2>Monsters: </h2>
+        {% for monster in monsters %}
+            <p>
+                {{monster['name']}} &nbsp;&nbsp;&nbsp;&nbsp; {{monster['current_HP']}}HP / {{monster['max_HP']}}HP
+                <form method="post" action="/dm-tools/encounter">
+                    <input type="submit" id="{{monster['name']}} +" name="{{monster['name']}} +" value="+">
+                    <input type="submit" id="{{monster['name']}} -" name="{{monster['name']}} -" value="-">
+                </form>
+            </p>
+        {% endfor %}
+        <br><hr><br>
+
+        <h2>Actions: </h2>
+        <form method="post" action="/dm-tools/encounter/">
+            <input type="submit" id="add_monster" name="add_monster" value="Add monster(s)">
+            <input type="submit" id="next_turn" name="next_turn" value="Move to Next Turn">
+        </form>
+        <br><hr><br>
+
+        <h2>Stat Blocks: </h2>
+        {% for type in monster_types%}
+            <p>
+            {% for para in type%}
+                {{para}}<br>
+            {% endfor %}
+            </p><br><hr><br>
+        {% endfor %}
+
+    </body>
+</html>

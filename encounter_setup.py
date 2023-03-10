@@ -6,6 +6,7 @@ setup_bp = Blueprint('setup', __name__)
 @setup_bp.route('/', methods=['GET', 'POST'])
 def setup_encounter():
     session['selected_monsters'] = []
+    session['add_monsters'] = False
     return redirect(url_for('dm-tools.encounter.setup.monsters'))
 
 
@@ -26,8 +27,11 @@ def monsters():
             
         if request.form.get('submit') == 'Select Monsters':
             session['selected_monsters'] = sorted(selected_monsters)
-            session['initiative_list'] = []
-            return redirect(url_for('dm-tools.encounter.setup.initiative'))
+            if session['add_monsters'] == False:
+                session['initiative_list'] = []
+                return redirect(url_for('dm-tools.encounter.setup.initiative'))
+            else:
+                return redirect(url_for('dm-tools.encounter.add_monsters'))
 
     session['selected_monsters'] = sorted(selected_monsters)
 
