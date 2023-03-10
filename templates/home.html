@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block page_title%}<h1>Home</h1>{% endblock %}
+
+{% block content %}
+<p>Welcome to the website of Pickles6855!</p>
+<br>
+<p>Where would you like to go?</p>
+<a href={{links['projects']}}>My Projects</a>   <a href={{links['about']}}>About Me</a>    <a href="{{links['dm-tools']}}">DM Tools</a>
+{% endblock %}

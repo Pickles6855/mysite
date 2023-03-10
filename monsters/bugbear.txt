@@ -1,0 +1,18 @@
+BUGBEAR
+
+Medium humanoid (goblinoid), chaotic evil
+
+16AC (hide armor, shield)
+27HP
+30ft SPEED
+
+STR: 15(+2)    DEX: 14(+2)    CON: 13(+1)    INT: 8(-1)    WIS: 11(+0)    CHA: 9(-1)
+Stealt DEX +6 Survival WIS +2
+
+SENSES: Darkvision 60ft, Passsive Perception 10
+LANGUAGES: Common, Goblin
+CHALLENGE: 1 200XP
+
+Brute: A melee weapon deals one extra die of its damage when the bugbear hits with it (included in the attack).
+Morningtar: Melee weapon attack, +4 to hit, 2d8 peircing damage
+Javelin: Melee or Rangweapon attack, +4 to hit, 2d6+2 piercing damage or 1d6+2 piercing damage with ranged attack

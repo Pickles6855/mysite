@@ -1,0 +1,37 @@
+body {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: lightgray;
+}
+
+a {
+    font-size: 25px;
+}
+
+p {
+    font-size: 25px;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+button {
+    font-size: 20px;
+    text-align: center;
+}
+
+label {
+    font-size: 20px;
+}
+
+input {
+    font-size: 20px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+}
+
+hr {
+    height: 5px;
+    background-color: black;
+}

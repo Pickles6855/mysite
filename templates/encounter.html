@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+    </head>
+    <body>
+        <h2>Monsters: </h2>
+        {% for monster in monsters %}
+            <p>{{monster['name']}} &nbsp;&nbsp;&nbsp;&nbsp; {{monster['current_HP']}}HP / {{monster['max_HP']}}HP</p>
+        {% endfor %}
+        <hr>
+
+        <h2>Stat Blocks: </h2>
+        {% for type in monster_types%}
+            <p>
+            {% for para in type%}
+                {{para}}<br>
+            {% endfor %}
+            </p><br><hr><br>
+        {% endfor %}
+
+        <h2>Initiative: </h2>
+        {% for player in initiative %}
+            <p>{{player}}</p>
+        {% endfor %}
+    </body>
+</html>

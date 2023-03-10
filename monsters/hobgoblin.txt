@@ -1,0 +1,17 @@
+HOBGOBLIN
+
+Medium humanoid (goblinoid), lawful evil
+
+18 AC (chain mail, shield)
+11 HP (2d8 + 2)
+30ft SPEED
+
+STR: 13 (+1)    DEX: 12 (+1)    CON: 12 (+1)    INT: 10 (+0)    WIS: 10 (+0)    CHA: 9 (-1)
+
+SENSES: Darkvision 60ft, Passive Perception 10
+LANGUAGES: Common, Goblin
+CHALLENGE 1/2, 100XP
+
+Martial Advantage: Once per turn, the hobgolbin can deal an extra 7 (2d6) damage to a creature it hits with a weapon attack if that creature is within 5 feet of an ally of the hobgoblin that isn't incapacitated
+Longsword: Melee Weapon Attack, +3 to hit, 1d8 + 1 slashing damage
+Longbow: Ranged Weapon Attack, +3 to hit, 1d8 + 1 pericing damage

@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block page_title %}<h1>Survey</h1>{% endblock %}
+
+{% block content %}
+<form action="{{links['survey']}}" method="post">
+    <label for="first_name">First Name:</label>
+    <input type="text", id="first_name" name="first_name">
+    <br>
+    <br>
+    <label for="last_name">Last Name:</label>
+    <input type="text", id="last_name" name="last_name">
+    <br>
+    <br>
+    <button type="submit">Submit Form</button>
+</form>
+{% endblock %}

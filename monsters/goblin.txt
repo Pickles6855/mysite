@@ -1,0 +1,18 @@
+GOBLIN
+
+Small humanoid (goblinoid), neutral evil
+
+15 AC (leather armor, shield)
+7 HP (2d6)
+30ft SPEED
+
+STR: 8 (-1)    DEX: 14 (+2)    CON: 10 (+0)    INT: 10 (+0)    WIS: 8 (-1)    CHA: 8 (-1)
+STR Stealth (+6)
+
+SENSES: Darkvision 60ft, Passive Perception 9
+LANGUAGES: Common, Goblin
+CHALLENGE 1/4, 50XP
+
+Nimble Escape: The goblin can take the Disengage or Hide action as a bonus action on each of its turns
+Scimitar: Melee Weapon Attack, +4 to hit, 1d6+2 slashing damage
+Shortbow: Ranged Weapon Attack, +4 to hit, 1d6+2 peircing damage

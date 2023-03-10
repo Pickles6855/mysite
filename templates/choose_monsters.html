@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    </head>
+    <body>
+        <h1>Choose Monsters</h1>
+        <hr>
+
+        <h2>Selected monsters (Click to remove)</h2>
+        <form method="post" action="/dm-tools/encounter/setup/monsters">
+            {% for monster in selected_monsters %}
+                <input type="submit" name="remove_{{monster}}" id="remove_{{monster}}" value="{{monster.capitalize()}}">
+            {% endfor %}
+            <hr>
+
+            <h2>Add monsters</h2>
+            {% for monster in loaded_monsters: %}
+                <input type="submit" name="{{monster}}" id="{{monster}}" value="{{monster.capitalize()}}"><br><br>
+            {% endfor %}
+            <hr>
+
+            <input type="submit" name="submit" id="submit" value="Select Monsters">
+        </form>
+    </body>
+</html>
